@@ -17,12 +17,12 @@ class _MyregisterState extends State<Myregister> {
         body: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              SizedBox(height: 50),
+              const SizedBox(height: 50),
 
               Row(
                 mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  const Padding(
+                children: const [
+                  Padding(
                     padding: EdgeInsets.fromLTRB(30, 0, 0, 0),
                     child: Text("LOGIN",
                       style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),),),
@@ -82,9 +82,9 @@ class _MyregisterState extends State<Myregister> {
                       });
                     },checkColor: Colors.white,activeColor: Colors.pinkAccent),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.fromLTRB(20, 0, 0, 0),
-                    child: const Text("Remember Me?",style: TextStyle(fontSize: 15),),
+                  const Padding(
+                    padding: EdgeInsets.fromLTRB(20, 0, 0, 0),
+                    child: Text("Remember Me?",style: TextStyle(fontSize: 15),),
                   ),
                 ],),
 
@@ -94,7 +94,7 @@ class _MyregisterState extends State<Myregister> {
                 padding: const EdgeInsets.fromLTRB(30, 0, 0, 0),
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                      primary: Colors.pinkAccent,
+                      backgroundColor: Colors.pinkAccent,
                       minimumSize: const Size(370, 50),
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(10.0))),
@@ -160,31 +160,21 @@ class _MyregisterState extends State<Myregister> {
 
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  Container(
-                    height: 50,
-                    width: 50,
-                    decoration: const BoxDecoration(
-                        shape: BoxShape.circle,
-                        image: DecorationImage(
-                            image: AssetImage('images/icons8.png'))),
-                  ),
-                  Container(
-                    height: 50,
-                    width: 50,
-                    decoration: const BoxDecoration(
-                        shape: BoxShape.circle,
-                        image: DecorationImage(
-                            image: AssetImage('images/123.png'))),
-                  ),
-                  Container(
-                    height: 50,
-                    width: 50,
-                    decoration: const BoxDecoration(
-                        shape: BoxShape.circle,
-                        image: DecorationImage(
-                            image: AssetImage('images/321.png'))),
-                  ),
+                children: const [
+                  SizedBox(
+                      height: 60,
+                      width: 60,
+                      child: Image(image: AssetImage('images/icons8.png'))),
+
+                  SizedBox(
+                      height: 60,
+                      width: 60,
+                      child: Image(image: AssetImage('images/321.png'))),
+
+                  SizedBox(
+                      height: 60,
+                      width: 60,
+                      child: Image(image: AssetImage('images/123.png'))),
                 ],
               ),
 

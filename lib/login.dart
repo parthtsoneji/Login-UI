@@ -10,14 +10,7 @@ class LoginPage extends StatefulWidget {
 class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(appBar: PreferredSize(
-      preferredSize: const Size(double.infinity, 56),
-      child: Visibility(
-        visible: false,
-        child: AppBar(),
-      ),
-    ),
-
+    return Scaffold(
       body: Column(children: [
 
         const SizedBox(height: 50),
@@ -134,31 +127,22 @@ class _LoginPageState extends State<LoginPage> {
 
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
-            Container(
-              height: 50,
-              width: 50,
-              decoration: const BoxDecoration(
-                  shape: BoxShape.circle,
-                  image: DecorationImage(
-                      image: AssetImage('images/icons8.png'))),
-            ),
-            Container(
-              height: 50,
-              width: 50,
-              decoration: const BoxDecoration(
-                  shape: BoxShape.circle,
-                  image: DecorationImage(
-                      image: AssetImage('images/123.png'))),
-            ),
-            Container(
-              height: 50,
-              width: 50,
-              decoration: const BoxDecoration(
-                  shape: BoxShape.circle,
-                  image: DecorationImage(
-                      image: AssetImage('images/321.png'))),
-            ),
+          children: const [
+
+            SizedBox(
+                height: 60,
+                width: 60,
+                child: Image(image: AssetImage('images/icons8.png'))),
+
+            SizedBox(
+              height: 60,
+              width: 60,
+                child: Image(image: AssetImage('images/321.png'))),
+
+            SizedBox(
+                height: 60,
+                width: 60,
+                child: Image(image: AssetImage('images/123.png'))),
           ],
         ),
 
