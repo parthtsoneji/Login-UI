@@ -160,21 +160,10 @@ class _MyregisterState extends State<Myregister> {
 
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: const [
-                  SizedBox(
-                      height: 60,
-                      width: 60,
-                      child: Image(image: AssetImage('images/icons8.png'))),
-
-                  SizedBox(
-                      height: 60,
-                      width: 60,
-                      child: Image(image: AssetImage('images/321.png'))),
-
-                  SizedBox(
-                      height: 60,
-                      width: 60,
-                      child: Image(image: AssetImage('images/123.png'))),
+                children:  [
+                  Image(image: AssetImage('images/icons8.png'),height: 60,width: 60,),
+                  Image(image: AssetImage('images/123.png'),height: 60,width: 60,),
+                  Image(image: AssetImage('images/321.png'),height: 60,width: 60,),
                 ],
               ),
 

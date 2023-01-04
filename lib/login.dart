@@ -12,9 +12,7 @@ class _LoginPageState extends State<LoginPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(children: [
-
         const SizedBox(height: 50),
-
         Row(
           mainAxisAlignment: MainAxisAlignment.start,
           children: const [
@@ -27,9 +25,7 @@ class _LoginPageState extends State<LoginPage> {
             ),
           ],
         ),
-
         const SizedBox(height: 30),
-
         Row(
           mainAxisAlignment: MainAxisAlignment.start,
           children: const [
@@ -42,9 +38,7 @@ class _LoginPageState extends State<LoginPage> {
             ),
           ],
         ),
-
         const SizedBox(height: 5),
-
         Container(
           padding: const EdgeInsets.fromLTRB(30, 0, 30, 0),
           child: const TextField(
@@ -52,9 +46,7 @@ class _LoginPageState extends State<LoginPage> {
                 border: OutlineInputBorder(), labelText: 'User Name'),
           ),
         ),
-
         const SizedBox(height: 15),
-
         Row(
           mainAxisAlignment: MainAxisAlignment.start,
           children: const [
@@ -67,9 +59,7 @@ class _LoginPageState extends State<LoginPage> {
             ),
           ],
         ),
-
         const SizedBox(height: 5),
-
         Container(
           padding: const EdgeInsets.fromLTRB(30, 0, 30, 0),
           child: const TextField(
@@ -77,42 +67,41 @@ class _LoginPageState extends State<LoginPage> {
                 border: OutlineInputBorder(), labelText: 'Password'),
           ),
         ),
-
         const SizedBox(height: 30),
-
         ElevatedButton(
           style: ElevatedButton.styleFrom(
               backgroundColor: Colors.pinkAccent,
               minimumSize: const Size(370, 50),
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(10.0))),
-          onPressed: () {
-          },
+          onPressed: () {},
           child: const Text("SIGN UP",
               style: TextStyle(
                 fontSize: 15,
               )),
         ),
-
         const SizedBox(height: 30),
-
         Padding(
           padding: const EdgeInsets.fromLTRB(30, 0, 30, 0),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
-            children:  [
+            children: [
               Expanded(
                 child: Container(
                   height: 1,
                   color: Colors.grey,
                 ),
               ),
-              const SizedBox(width: 5,),
+              const SizedBox(
+                width: 5,
+              ),
               const Text(
                 "OR",
                 style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold),
               ),
-              const SizedBox(width: 5,),
+              const SizedBox(
+                width: 5,
+              ),
               Expanded(
                 child: Container(
                   height: 1,
@@ -122,36 +111,24 @@ class _LoginPageState extends State<LoginPage> {
             ],
           ),
         ),
-
         const SizedBox(height: 30),
 
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: const [
-
-            SizedBox(
-                height: 60,
-                width: 60,
-                child: Image(image: AssetImage('images/icons8.png'))),
-
-            SizedBox(
-              height: 60,
-              width: 60,
-                child: Image(image: AssetImage('images/321.png'))),
-
-            SizedBox(
-                height: 60,
-                width: 60,
-                child: Image(image: AssetImage('images/123.png'))),
+          children: [
+            Image(image: AssetImage('images/icons8.png'),height: 60,width: 60,),
+            Image(image: AssetImage('images/123.png'),height: 60,width: 60,),
+            Image(image: AssetImage('images/321.png'),height: 60,width: 60,),
           ],
         ),
-
         const SizedBox(height: 30),
-
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Text("Already a User?",style: TextStyle(fontSize: 15),),
+            const Text(
+              "Already a User?",
+              style: TextStyle(fontSize: 15),
+            ),
             Padding(
               padding: const EdgeInsets.all(6.0),
               child: TextButton(
