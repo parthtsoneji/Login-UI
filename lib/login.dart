@@ -115,7 +115,7 @@ class _LoginPageState extends State<LoginPage> {
 
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
+          children: const [
             Image(image: AssetImage('images/icons8.png'),height: 60,width: 60,),
             Image(image: AssetImage('images/123.png'),height: 60,width: 60,),
             Image(image: AssetImage('images/321.png'),height: 60,width: 60,),
