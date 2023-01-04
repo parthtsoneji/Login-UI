@@ -39,6 +39,10 @@ class _SemopleState extends State<Semople> {
                 decoration: InputDecoration(labelText: "Enter Name",
                     //fillColor: Colors.black38,
                     filled: true,
+                    prefix: CircularProgressIndicator(
+
+                    ),
+                    //suffix: Icon(Icons.account_balance),
                     border: OutlineInputBorder(borderRadius: BorderRadius.circular(30)),enabledBorder: OutlineInputBorder(borderSide: BorderSide(color: Colors.yellowAccent),borderRadius: BorderRadius.circular(30)),
                     hintText: 'Enter Name',
                     hintStyle: TextStyle(color: Colors.red)),
